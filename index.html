@@ -78,14 +78,37 @@
             }
         }
         .map-icon {
-        cursor: pointer;
-        display: inline-block;
-        margin-top: 20px;
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            bottom: 40px;
+            right: 82px;
     }
     .whatsapp-icon {
         cursor: pointer;
+        display: block;
+    margin-top: 20px;
+    animation: blink 1.5s infinite;
+    position: absolute;
+    bottom: -187px;
+    right: 81px;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    .call-link {
+        cursor: pointer;
         display: inline-block;
-        margin-top: 20px;
+        font-size: 20px;
+        position: absolute;
+        right: 85px;
+        bottom: -126px;
+        color: #007bff; /* Change to your preferred color */
+        text-decoration: none;
         animation: blink 1.5s infinite;
     }
 
@@ -94,6 +117,7 @@
         50% { opacity: 0.5; }
         100% { opacity: 1; }
     }
+
     </style>
 </head>
 <body>
