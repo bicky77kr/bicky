@@ -117,33 +117,73 @@
         50% { opacity: 0.5; }
         100% { opacity: 1; }
     }
+    .invite-container {
+        text-align: center;
+        background: url('invit.jpeg') no-repeat center center;
+        background-size: cover;
+        padding: 20px;
+        color: #fff; /* Text color */
+        font-family: cursive;
+    }
 
+    .invite-heading {
+        font-size: 36px;
+        color: orange;
+        margin-bottom: 10px;
+    }
+
+    .invite-names {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .icon-container img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
     </style>
 </head>
 <body>
     <img src="image2.jpeg" alt="Chhath Puja Header" class="puja-header">
-    <img src="image3.jpeg" alt="Invitation" class="invit">
-
-    
-
-    
-
-    <div class="map-icon">
-        <a href="https://www.google.com/maps?q=23.75006402179059,86.28010949215712" target="_blank">
-            <img src="icons8-map-50.png" alt="Map Icon" width="50" height="50">
-        </a>
-    </div>
-
-    <div class="call-link">
-        <a href="tel:7992343522">
-            <img src="icons8-call-60.png" alt="Call Icon" width="50" height="50">
-        </a>
-    </div>
-
-    <div class="whatsapp-icon">
-        <a href="https://wa.me/8292020009" target="_blank">
-            <img src="icons8-whatsapp-80.png" alt="WhatsApp Icon" width="50" height="50">
-        </a>
+    <div class="invite-container">
+        <div class="invite-heading">☆ Invite By ☆</div>
+        <div class="invite-names">
+            Mrs. Mithalesh Sharma<br>
+            Sanjay Sharma<br>
+            Ajay Sharma<br>
+            Bicky Kumar
+        </div>
+        <div class="icon-container">
+            <!-- Map Icon -->
+            <a href="https://www.google.com/maps?q=23.75006402179059,86.28010949215712" target="_blank">
+                <img src="map-icon.png" alt="Map Icon">
+            </a>
+            
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/8292020009" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp Icon">
+            </a>
+            
+            <!-- Call Icon -->
+            <a href="tel:7992343522">
+                <img src="call-icon.png" alt="Call Icon">
+            </a>
+        </div>
     </div>
 </body>
 </html>
